@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "NutriPlus.Main",
+      "projectName": "NutriPlus_13656d09"
+    },
+    {
+      "type": "java",
+      "name": "Run NutriPlus",
+      "request": "launch",
+      "mainClass": "NutriPlus.Main",
+      "env": {
+        "NP_DB_HOST": "127.0.0.1",
+        "NP_DB_PORT": "3306",
+        "NP_DB_NAME": "nutriplus",
+        "NP_DB_USER": "nutriplus",
+        "NP_DB_PASSWORD": "nutri123"
+      },
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

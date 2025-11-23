@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.1.1">
+  <diagram name="ERD" id="h61LBf9FSbkxOXGwI_og">
+    <mxGraphModel dx="1426" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-1" edge="1" parent="1" source="zcl_UWtMAKs9J50JSivQ-11" style="startArrow=ERmany;endArrow=ERone;startFill=0;endFill=0;strokeColor=#000000;" target="zcl_UWtMAKs9J50JSivQ-9" value="FK usuario_id → usuarios(id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-2" edge="1" parent="1" source="zcl_UWtMAKs9J50JSivQ-12" style="startArrow=ERmany;endArrow=ERone;startFill=0;endFill=0;strokeColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.499;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;" target="zcl_UWtMAKs9J50JSivQ-11" value="FK refeicao_id → refeicoes(id)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="880" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-3" edge="1" parent="1" source="zcl_UWtMAKs9J50JSivQ-13" style="startArrow=ERmany;endArrow=ERone;startFill=0;endFill=0;strokeColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.499;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" target="zcl_UWtMAKs9J50JSivQ-14" value="FK alimento_id → alimentos(id)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-4" edge="1" parent="1" source="zcl_UWtMAKs9J50JSivQ-16" style="startArrow=ERmany;endArrow=ERone;startFill=0;endFill=0;strokeColor=#000000;entryX=0.498;entryY=1.003;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="zcl_UWtMAKs9J50JSivQ-9" value="FK usuario_id → usuarios(id)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="360" y="310" as="sourcePoint" />
+            <mxPoint x="710" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-5" edge="1" parent="1" source="zcl_UWtMAKs9J50JSivQ-7" style="startArrow=ERmany;endArrow=ERone;startFill=0;endFill=0;strokeColor=#000000;" target="zcl_UWtMAKs9J50JSivQ-9" value="FK usuario_id → usuarios(id)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-6" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;metas_diarias&lt;/span&gt;" vertex="1">
+          <mxGeometry height="200" width="330" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-7" parent="zcl_UWtMAKs9J50JSivQ-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;usuario_id&lt;/div&gt;&lt;div&gt;dia_mes&lt;/div&gt;&lt;div&gt;tdee_kcal&lt;/div&gt;&lt;div&gt;meta_kcal&lt;/div&gt;&lt;div&gt;meta_prot_g&lt;/div&gt;&lt;div&gt;meta_carb_g&lt;/div&gt;&lt;div&gt;meta_gord_g&lt;/div&gt;&lt;div&gt;meta_agua_ml&lt;/div&gt;&lt;div&gt;—&lt;/div&gt;&lt;div&gt;UNIQUE KEY uq_usuario_dia_mes (usuario_id, dia_mes)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="330" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;div&gt;&lt;b&gt;usuarios&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="270" x="550" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-9" parent="zcl_UWtMAKs9J50JSivQ-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;sexo&lt;/div&gt;&lt;div&gt;idade&lt;/div&gt;&lt;div&gt;altura_cm&lt;/div&gt;&lt;div&gt;peso_kg&lt;/div&gt;&lt;div&gt;atividade&lt;/div&gt;&lt;div&gt;objetivo&lt;/div&gt;&lt;div&gt;perc_gordura&lt;/div&gt;&lt;div&gt;criado_em&lt;/div&gt;&lt;div style=&quot;font-size:10px;color:#666666;&quot;&gt;sexo ∈ {M,F}; atividade ∈ {SED,LEV,MOD,ALT,ATH}; objetivo ∈ {MANUT,BULK,CUT}; idade [12..100]; altura_cm [120..230]; peso_kg [30..300]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;div&gt;&lt;b&gt;refeicoes&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="360" x="1020" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-11" parent="zcl_UWtMAKs9J50JSivQ-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;usuario_id&lt;/div&gt;&lt;div&gt;dia_mes&lt;/div&gt;&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;INDEX idx_ref_usuario_dia_mes (usuario_id, dia_mes)&lt;/div&gt;&lt;div style=&quot;font-size:10px;color:#666666;&quot;&gt;nome ∈ {CAFEMANHA, ALMOCO, JANTAR, LANCHE, PRE, POS, OUTRO}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-12" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;div&gt;&lt;b&gt;consumos&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="1080" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-13" parent="zcl_UWtMAKs9J50JSivQ-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;refeicao_id&lt;/div&gt;&lt;div&gt;alimento_id&lt;/div&gt;&lt;div&gt;quantidade_g&lt;/div&gt;&lt;div&gt;logado_em&lt;/div&gt;&lt;div&gt;INDEX idx_cons_refeicao (refeicao_id)&lt;/div&gt;&lt;div&gt;INDEX idx_cons_alimento (alimento_id)&lt;/div&gt;&lt;div style=&quot;font-size:10px;color:#666666;&quot;&gt;quantidade_g &amp;gt; 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-14" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;div&gt;&lt;b&gt;alimentos&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="1080" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-15" parent="zcl_UWtMAKs9J50JSivQ-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;nome&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;kcal_100g&lt;/span&gt;&lt;/div&gt;&lt;div&gt;prot_100g&lt;/div&gt;&lt;div&gt;carb_100g&lt;/div&gt;&lt;div&gt;gord_100g&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-16" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;div&gt;&lt;b&gt;registros_agua&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="340" x="515" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="zcl_UWtMAKs9J50JSivQ-17" parent="zcl_UWtMAKs9J50JSivQ-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;PK id&lt;/div&gt;&lt;div&gt;usuario_id&lt;/div&gt;&lt;div&gt;ml&lt;/div&gt;&lt;div&gt;logado_em&lt;/div&gt;&lt;div&gt;INDEX idx_agua_usuario_dia_mes (usuario_id, logado_em)&lt;/div&gt;&lt;div style=&quot;font-size:10px;color:#666666;&quot;&gt;ml &amp;gt; 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="340" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gptGen-1" parent="1" style="swimlane;childLayout=stackLayout;rounded=1;shadow=0;html=1;fillColor=#ffffff;strokeColor=#6C8EBF;dashed=1;startSize=30;container=1;" value="VIEW v_kcal_por_consumo" vertex="1">
+          <mxGeometry height="60" width="360" x="1600" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="gptGen-2" parent="gptGen-1" style="text;align=left;verticalAlign=top;spacingLeft=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;cols: id, refeicao_id, usuario_id, dia, kcal, prot_g, carb_g, gord_g&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gptGen-3" edge="1" parent="1" source="gptGen-1" style="endArrow=none;dashed=1;strokeColor=#6C8EBF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zcl_UWtMAKs9J50JSivQ-15" value="depende de">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gptGen-4" edge="1" parent="1" source="gptGen-1" style="endArrow=none;dashed=1;strokeColor=#6C8EBF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zcl_UWtMAKs9J50JSivQ-11" value="depende de">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gptGen-5" edge="1" parent="1" source="gptGen-1" style="endArrow=none;dashed=1;strokeColor=#6C8EBF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="zcl_UWtMAKs9J50JSivQ-13" value="depende de">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gptLegend-1" parent="1" style="swimlane;childLayout=stackLayout;rounded=1;shadow=0;html=1;startSize=26;container=1;whiteSpace=wrap;fillColor=#FFF7CC;strokeColor=#D6B656;" value="Legenda" vertex="1">
+          <mxGeometry height="100" width="1240" x="40" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="gptLegend-2" parent="gptLegend-1" style="text;align=left;verticalAlign=top;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;Notação crow’s foot: traço = 1, pé‑de‑galinha = N&lt;br/&gt;FKs: NOT NULL; ON DELETE RESTRICT (cascata via aplicação)&lt;br/&gt;Índices: idx_ref_usuario_dia_mes (usuario_id, dia_mes); idx_cons_refeicao (refeicao_id); idx_cons_alimento (alimento_id); idx_agua_usuario_dia_mes (usuario_id, logado_em)&lt;br/&gt;Domínios: sexo {M,F}; atividade {SED,LEV,MOD,ALT,ATH}; objetivo {MANUT,BULK,CUT}; consumos.quantidade_g &gt; 0; registros_agua.ml &gt; 0; refeicoes.nome ∈ {CAFEMANHA, ALMOCO, JANTAR, LANCHE, PRE, POS, OUTRO}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="1240" y="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
