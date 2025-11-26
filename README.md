@@ -27,7 +27,6 @@ Aplicativo de console para registro de refeições, consumos e água, cálculo d
   * (i) **Agregação** – "Calorias por dia" (soma e `GROUP BY`).
   * (ii) **Join** – "Itens da refeição" (consumos × alimentos).
 * **Operações CRUD exigidas:** fluxos de **Inserir**, **Remover** (com confirmação e atenção a restrições/cascata) e **Atualizar** (mostra o registro atualizado ao final), cobrindo as entidades exigidas.
-* **Repositório GitHub:** *https://github.com/pedropedrinpedroca/NutriPlus_C2*.
 
 ---
 
@@ -224,9 +223,3 @@ NutriPlus/
 * **Driver JDBC não encontrado:** confirme `lib/mysql-connector-j-9.5.0.jar` e classpath no `javac/java`.
 * **Permissão negada:** confira usuário/senha e privilégios (`GRANT ALL PRIVILEGES ON nutriplus.* TO 'nutriplus'@'%'`).
 * **Charset:** o schema usa `utf8mb4`. Se ver caracteres estranhos no terminal, ajuste a fonte/locale.
-
----
-
-## 8) Licença
-
-Uso acadêmico/educacional.
